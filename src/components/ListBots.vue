@@ -1,7 +1,10 @@
 <template>
-    <ol>
-        <BotsItem :bot="bot" :setActiveBot="setActiveBot" v-for="bot in bots" :key="bot.id" />
-    </ol>
+    <section class="sidebar">
+        <h2 class="header">Боты</h2>
+        <ol class="list">
+            <BotsItem :bot="bot" :setActiveBot="setActiveBot" v-for="bot in bots" :key="bot.id" />
+        </ol>
+    </section>
 </template>
 <script>
 import BotsItem from './BotsItem.vue';
